@@ -2,5 +2,5 @@
 layout: <%=layout%>
 title: <%=title%>
 date: <%=date%>
-categories: <%=categories%>
+categories: 生活记录
 ---
