@@ -1,6 +1,15 @@
 import { defineSiteConfig } from 'valaxy'
+import { addonWaline } from 'valaxy-addon-waline'
+
 
 export default defineSiteConfig({
+
+
+
+
+
+
+
   url: 'https://github.com/zy150',
   lang: 'zh-CN',
   title: '欢迎来到这里',
@@ -163,6 +172,7 @@ export default defineSiteConfig({
      * @default 'by-nc-sa'
      */
 
-  }
- 
+  },
+  
+
 })
