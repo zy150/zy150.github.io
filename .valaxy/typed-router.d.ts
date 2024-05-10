@@ -32,6 +32,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/计算机考研篇': RouteRecordInfo<'/posts/计算机考研篇', '/posts/计算机考研篇', Record<never, never>, Record<never, never>>,
     '/posts/起点': RouteRecordInfo<'/posts/起点', '/posts/起点', Record<never, never>, Record<never, never>>,
     '/posts/如何使用github': RouteRecordInfo<'/posts/如何使用github', '/posts/如何使用github', Record<never, never>, Record<never, never>>,
+    '/posts/我亦飘零久': RouteRecordInfo<'/posts/我亦飘零久', '/posts/我亦飘零久', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 }
