@@ -1,1 +1,86 @@
-// you can custom css vars here
+
+@font-face {
+  font-family: '霞鹜文楷';
+  src: url('./fonts/LXGWWenKai-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular */
+}
+
+
+:root {
+  // 衬线字体（serif）
+  --va-font-serif: '霞鹜文楷', 'Noto Serif SC', STZhongsong, STKaiti, KaiTi, serif;
+
+ --smc-font-sans: '霞鹜文楷', Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  // 等宽字体（mono）
+  --va-font-mono: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+// 应用字体
+body {
+  font-family: var(--va-font-serif);
+  font-weight: 400; /* Regular */
+}
+.markdown-body {
+  font-family: var(--va-font-serif) !important; /* 使用你的自定义字体 */
+   font-size: 1.1rem; /* 增大正文字体大小 */
+  line-height: 1.6; /* 调整行高，确保可读性 */
+}
+
+h1, h2, h3 {
+  font-family: var(--va-font-serif);
+  font-weight: 500; /* Medium */
+}
+
+code {
+  font-family: var(--va-font-mono);
+}
+
+.markdown-body blockquote {
+  background-color: #f9f9f9; /* 浅灰色背景 */
+  border-left: 4px solid #6a9fb5; /* 左侧边框颜色 */
+  color: #555; /* 文字颜色 */
+  // font-style: italic; /* 斜体 */
+  margin: 1.5em 0; /* 外边距 */
+  padding: 1em 1.5em; /* 内边距 */
+  position: relative; /* 用于伪元素定位 */
+  font-family: var(--va-font-serif); /* 使用衬线字体 */
+  font-size: 1.1em; /* 字体大小 */
+  line-height: 1.6; /* 行高 */
+}
+
+.markdown-body blockquote::before {
+  content: "“"; /* 引用符号 */
+  font-family: serif; /* 使用衬线字体 */
+  font-size: 3em; /* 符号大小 */
+  color: #6a9fb5; /* 符号颜色 */
+  position: absolute; /* 绝对定位 */
+  left: -0.5em; /* 水平偏移 */
+  top: -0.2em; /* 垂直偏移 */
+  opacity: 0.6; /* 透明度 */
+}
+
+.markdown-body blockquote::after {
+  content: "”"; /* 引用符号 */
+  font-family: serif; /* 使用衬线字体 */
+  font-size: 3em; /* 符号大小 */
+  color: #6a9fb5; /* 符号颜色 */
+  position: absolute; /* 绝对定位 */
+  right: -0.5em; /* 水平偏移 */
+  bottom: -0.5em; /* 垂直偏移 */
+  opacity: 0.6; /* 透明度 */
+}
+
+.markdown-body blockquote p {
+  margin: 0; /* 去掉段落默认的外边距 */
+}
+.markdown-body blockquote {
+  background-color: #f0f8f0; /* 浅绿色背景 */
+  border-left: 4px solid #7fbf7f; /* 浅绿色边框 */
+  color: #444; /* 深灰色文字 */
+}
+
+.markdown-body blockquote::before,
+.markdown-body blockquote::after {
+  color: #7fbf7f; /* 浅绿色引用符号 */
+}
