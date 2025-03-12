@@ -34,6 +34,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/如何使用github': RouteRecordInfo<'/posts/如何使用github', '/posts/如何使用github', Record<never, never>, Record<never, never>>,
     '/posts/Bye,HAU': RouteRecordInfo<'/posts/Bye,HAU', '/posts/Bye,HAU', Record<never, never>, Record<never, never>>,
     '/posts/others/我亦飘零久': RouteRecordInfo<'/posts/others/我亦飘零久', '/posts/others/我亦飘零久', Record<never, never>, Record<never, never>>,
+    '/posts/TheWinter/TheWinter': RouteRecordInfo<'/posts/TheWinter/TheWinter', '/posts/TheWinter/TheWinter', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
 }
