@@ -84,3 +84,15 @@ code {
 .markdown-body blockquote::after {
   color: #7fbf7f; /* 浅绿色引用符号 */
 }
+/* 只对直接段落缩进，排除引用块和嵌套段落 */
+.markdown-body  p {
+  text-indent: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+/* 重置引用块内的段落样式 */
+.markdown-body blockquote p,
+.markdown-body li p {
+  text-indent: 0 !important;
+}
