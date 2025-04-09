@@ -15,7 +15,7 @@ export default defineSiteConfig({
   title: '欢迎来到这里',
   author: {
     name: '一支懒虫',
-	 avatar: 'http://62.234.62.113:8080/avatar.png',
+	 avatar: '/avatar.png',
 	 email:'zy15027765695@outlook.com',
   },
    /**
@@ -144,7 +144,7 @@ export default defineSiteConfig({
     methods: [
       {
         name: '支付宝',
-        url: 'http://62.234.62.113:8080/aliPlay.png',
+        url: '/aliPlay.jpg',
         color: '#00A3EE',
         icon: 'i-ri-alipay-line',
       },

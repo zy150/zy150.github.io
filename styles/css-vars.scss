@@ -36,7 +36,7 @@ code {
   font-family: var(--va-font-mono);
 }
 
-.markdown-body blockquote {
+.MyClass blockquote {
   background-color: #f9f9f9; /* 浅灰色背景 */
   border-left: 4px solid #6a9fb5; /* 左侧边框颜色 */
   color: #555; /* 文字颜色 */
@@ -49,7 +49,7 @@ code {
   line-height: 1.6; /* 行高 */
 }
 
-.markdown-body blockquote::before {
+.MyClass blockquote::before {
   content: "“"; /* 引用符号 */
   font-family: serif; /* 使用衬线字体 */
   font-size: 3em; /* 符号大小 */
@@ -60,7 +60,7 @@ code {
   opacity: 0.6; /* 透明度 */
 }
 
-.markdown-body blockquote::after {
+.MyClass blockquote::after {
   content: "”"; /* 引用符号 */
   font-family: serif; /* 使用衬线字体 */
   font-size: 3em; /* 符号大小 */
@@ -71,28 +71,31 @@ code {
   opacity: 0.6; /* 透明度 */
 }
 
-.markdown-body blockquote p {
+.MyClass blockquote p {
   margin: 0; /* 去掉段落默认的外边距 */
 }
-.markdown-body blockquote {
+.MyClass blockquote {
   background-color: #f0f8f0; /* 浅绿色背景 */
   border-left: 4px solid #7fbf7f; /* 浅绿色边框 */
   color: #444; /* 深灰色文字 */
 }
 
-.markdown-body blockquote::before,
-.markdown-body blockquote::after {
+.MyClass blockquote::before,
+.MyClass blockquote::after {
   color: #7fbf7f; /* 浅绿色引用符号 */
 }
 /* 只对直接段落缩进，排除引用块和嵌套段落 */
-.markdown-body  p {
+.MyClass  p {
   text-indent: 2em;
   margin: 0;
   padding: 0;
 }
 
 /* 重置引用块内的段落样式 */
-.markdown-body blockquote p,
-.markdown-body li p {
+.MyClass blockquote p,
+.MyClass li p {
   text-indent: 0 !important;
+}
+.Glacier-Blue{
+	color: rgb(9, 105, 218);
 }

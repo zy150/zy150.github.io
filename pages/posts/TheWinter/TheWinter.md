@@ -5,9 +5,14 @@ date: 2025-03-02 17:33:48
 categories: 想说的没说的话
 aplayer: true
 password: saying
+updated: 2025-04-02 17:33:48
+copyright: false
+markdownClass: MyClass
+pageTitleClass: Glacier-Blue
+color: rgb(9, 105, 218)
 ---
 
-
+![:TheWinter](https://count.getloli.com/@:TheWinter?theme=green)
 
 <br>
 
@@ -58,7 +63,7 @@ h1, h2, h3 {
 >
 > 没想到这么快破万啊，还是会忍不住写来写去的。—— 25.3.16
 >
-> 我原谅我曾犯过的错，说过的话，以及做过的事。向前看，再见啦。 ——25.3.16
+> 我原谅我曾犯过的错，说过的话，以及做过的事。向前看，再见啦。 ——25.4.2
 
 
 
