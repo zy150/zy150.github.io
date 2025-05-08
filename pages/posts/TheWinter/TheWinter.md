@@ -5,7 +5,7 @@ date: 2025-03-02 17:33:48
 categories: 想说的没说的话
 aplayer: true
 password: saying
-updated: 2025-04-02 17:33:48
+updated: 2025-05-08 17:33:48
 copyright: false
 markdownClass: CiteClass LyricsClass markdown-body
 pageTitleClass: Glacier-Blue
@@ -55,7 +55,7 @@ h1, h2, h3 {
 
 ## Record
 
-
+![:TheWinter](https://count.getloli.com/@:TheWinter?theme=green)
 
 > [!NOTE]
 >
