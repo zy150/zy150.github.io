@@ -12,10 +12,11 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@ctrl/tinycolor": "^4.1.0",
     "aplayer": "^1.10.1",
-    "valaxy": "^0.18.5",
-    "valaxy-addon-waline": "^0.1.4",
-    "valaxy-theme-yun": "0.18.5"
+    "valaxy": "^0.23.3",
+    "valaxy-addon-waline": "^0.2.1",
+    "valaxy-theme-yun": "^0.23.3"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",

@@ -20,8 +20,9 @@
 body {
   font-family: var(--va-font-serif);
   font-weight: 400; /* Regular */
+
 }
-.markdown-body {
+.markdown-body{
   font-family: var(--va-font-serif) !important; /* 使用你的自定义字体 */
    font-size: 1.1rem; /* 增大正文字体大小 */
   line-height: 1.6; /* 调整行高，确保可读性 */
@@ -36,66 +37,137 @@ code {
   font-family: var(--va-font-mono);
 }
 
-.MyClass blockquote {
-  background-color: #f9f9f9; /* 浅灰色背景 */
-  border-left: 4px solid #6a9fb5; /* 左侧边框颜色 */
-  color: #555; /* 文字颜色 */
-  // font-style: italic; /* 斜体 */
-  margin: 1.5em 0; /* 外边距 */
-  padding: 1em 1.5em; /* 内边距 */
-  position: relative; /* 用于伪元素定位 */
-  font-family: var(--va-font-serif); /* 使用衬线字体 */
-  font-size: 1.1em; /* 字体大小 */
-  line-height: 1.6; /* 行高 */
+/*  歌词 */
+.LyricsClass{
+
+/* 歌词容器 */
+.lyrics-container {
+  text-align: center;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.MyClass blockquote::before {
-  content: "“"; /* 引用符号 */
-  font-family: serif; /* 使用衬线字体 */
-  font-size: 3em; /* 符号大小 */
-  color: #6a9fb5; /* 符号颜色 */
-  position: absolute; /* 绝对定位 */
-  left: -0.5em; /* 水平偏移 */
-  top: -0.2em; /* 垂直偏移 */
-  opacity: 0.6; /* 透明度 */
+/* 歌词行样式 */
+.lyrics-line {
+  display: block;
+  color: #4A89DC;
+  margin: 12px 0;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.MyClass blockquote::after {
-  content: "”"; /* 引用符号 */
-  font-family: serif; /* 使用衬线字体 */
-  font-size: 3em; /* 符号大小 */
-  color: #6a9fb5; /* 符号颜色 */
-  position: absolute; /* 绝对定位 */
-  right: -0.5em; /* 水平偏移 */
-  bottom: -0.5em; /* 垂直偏移 */
-  opacity: 0.6; /* 透明度 */
+/* 歌曲名样式（蓝色+小字号） */
+.lyrics-song {
+  display: block;
+  text-align: right;
+  color: #4A89DC; /* 改为蓝色 */
+  font-size: 1.1em; /* 减小字号 */
+  margin-top: 25px;
+  font-weight: 500;
+  position: relative;
+  padding-right: 15px;
 }
 
-.MyClass blockquote p {
-  margin: 0; /* 去掉段落默认的外边距 */
-}
-.MyClass blockquote {
-  background-color: #f0f8f0; /* 浅绿色背景 */
-  border-left: 4px solid #7fbf7f; /* 浅绿色边框 */
-  color: #444; /* 深灰色文字 */
+.lyrics-song::before {
+  content: "——";
+  margin-right: 5px;
+  color: #7F8C8D;
 }
 
-.MyClass blockquote::before,
-.MyClass blockquote::after {
-  color: #7fbf7f; /* 浅绿色引用符号 */
+/* 下划线效果（去除模糊） */
+.lyrics-line::after {
+  content: '';
+  position: absolute;
+  left: 20%;
+  bottom: -4px;
+  width: 60%;
+  height: 2px;
+  background: #5D9CEC;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
-/* 只对直接段落缩进，排除引用块和嵌套段落 */
-.MyClass  p {
-  text-indent: 2em;
+
+/* 纯净悬停效果（去除模糊） */
+.lyrics-line:hover {
+  transform: scale(1.03);
+  color: #3B7DDD;
+  text-shadow: none; /* 移除文字阴影造成的模糊 */
+}
+
+.lyrics-line:hover::after {
+  transform: scaleX(1);
+}
+	
+	
+}
+
+/*  歌词 */
+
+
+/*  引用 */
+.CiteClass{
+
+/* 引用容器样式 */
+.cite-container {
+  background-color: #f9f9f9;
+  border-left: 4px solid #6a9fb5;
+  color: #555;
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  position: relative;
+  font-family: var(--va-font-serif);
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* 引用装饰符号 */
+.cite-container::before {
+  content: "“";
+  font-family: serif;
+  font-size: 3em;
+  color: #6a9fb5;
+  position: absolute;
+  left: -0.5em;
+  top: -0.2em;
+  opacity: 0.6;
+}
+
+.cite-container::after {
+  content: "”";
+  font-family: serif;
+  font-size: 3em;
+  color: #6a9fb5;
+  position: absolute;
+  right: -0.5em;
+  bottom: -0.5em;
+  opacity: 0.6;
+}
+
+/* 内容样式 */
+.cite-content {
   margin: 0;
-  padding: 0;
-}
-
-/* 重置引用块内的段落样式 */
-.MyClass blockquote p,
-.MyClass li p {
   text-indent: 0 !important;
 }
+
+/* 绿色主题变体 */
+.cite-container.green-theme {
+  background-color: #f0f8f0;
+  border-left-color: #7fbf7f;
+  color: #444;
+}
+
+.cite-container.green-theme::before,
+.cite-container.green-theme::after {
+  color: #7fbf7f;
+}
+
+}
+/*  引用 */
+
+
 .Glacier-Blue{
 	color: rgb(9, 105, 218);
 }
