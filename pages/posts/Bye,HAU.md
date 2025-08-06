@@ -6,7 +6,7 @@ categories: 生活记录
 aplayer: true
 top: 1
 updated: 2024-06-05 17:33:48
-markdownClass: MyClass
+markdownClass: MyClass markdown-body
 ---
 
 <br>
